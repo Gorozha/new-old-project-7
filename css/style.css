@@ -723,10 +723,10 @@ svg.phone-icon {
 .finish {
   color: var(--body-color);
 
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03em; */
 }
 .footer-item {
   padding-top: 60px;
@@ -746,10 +746,10 @@ svg.phone-icon {
 .footer-social > b {
   display: flex;
   margin-bottom: 20px;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  /* font-family: "Roboto", sans-serif;
+  font-size: 14px; */
   line-height: 1.142;
-  letter-spacing: inherit;
+  /* letter-spacing: inherit; */
 }
 
 .footer-link {
@@ -824,10 +824,10 @@ svg.phone-icon {
 /* ============================== */
 .footer-street a {
   color: var(--body-color);
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: inherit;
+  letter-spacing: inherit; */
 }
 
 .footer-street {
@@ -838,10 +838,10 @@ svg.phone-icon {
 .footer-mail a {
   color: var(--body-color);
 
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: inherit;
+  letter-spacing: inherit; */
 }
 
 .footer-mail {
@@ -852,10 +852,10 @@ svg.phone-icon {
 .footer-tel a {
   color: var(--body-color);
 
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: inherit;
+  letter-spacing: inherit; */
 }
 
 /* button============================== */
@@ -877,10 +877,10 @@ svg.phone-icon {
   margin-right: 185px;
   color: var(--body-color);
 
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  /* font-family: "Roboto", sans-serif;
+  font-size: 14px; */
   line-height: 1.142;
-  letter-spacing: inherit;
+  /* letter-spacing: inherit; */
 }
 .footer-subscribe {
   display: flex;
@@ -979,7 +979,7 @@ svg.phone-icon {
   border: 1px solid transparent;
   margin-bottom: 50px;
 
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: inherit;
@@ -995,7 +995,7 @@ svg.phone-icon {
   background-color: var(--link-color);
   color: var(--secondary-body-color);
   border: 1px solid transparent;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: inherit;
@@ -1096,19 +1096,19 @@ svg.phone-icon {
 
 .main-heading {
   color: var(--main-color);
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   font-size: 18px;
   line-height: 2;
-  letter-spacing: inherit;
+  /* letter-spacing: inherit; */
   /*6%  */
 }
 
 .main-rubric {
   color: var(--secondary-color);
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: inherit;
+  /* letter-spacing: inherit; */
 }
 
 /* ====backdrop=== */
@@ -1162,10 +1162,8 @@ svg.phone-icon {
 }
 
 .btn-close:hover {
-  
   fill: var(--link-color);
 }
-
 
 .btn-img {
   position: absolute;
@@ -1177,7 +1175,6 @@ svg.phone-icon {
   height: 18px;
 }
 
-  
 .message {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -1218,7 +1215,7 @@ svg.phone-icon {
 }
 
 /* бордер без фокуса */
-.form-input { 
+.form-input {
   margin: 0;
   padding: 12px 10px;
   padding-left: 42px;
@@ -1235,7 +1232,7 @@ svg.phone-icon {
 .form-input:focus + .form-label,
 .form-input:not(:placeholder-shown) + .form-label {
   color: var(--link-color);
-  
+
   transform: translateY(-200%);
 }
 /* при правильном вводе инпут и бордер синий */
@@ -1244,14 +1241,13 @@ svg.phone-icon {
   border: 1px solid var(--link-color);
 }
 /* при неправильном вводе инпут серый бордер красный  */
-.form-input:invalid:required.form-input:not(:placeholder-shown){
+.form-input:invalid:required.form-input:not(:placeholder-shown) {
   color: var(--secondary-color);
   border: red solid 3px;
 }
 
-
 /* позиционирование иконок свг */
-.input-icon svg{
+.input-icon svg {
   position: absolute;
   top: 50%;
   left: 16px;
@@ -1269,14 +1265,13 @@ svg.phone-icon {
 .changing-color:hover{
   fill: #e8eb3d;
 } */
- .form-input:focus .changing-color  {
+.form-input:focus .changing-color {
   outline: none;
   fill: var(--link-color);
 }
 
-
 /* смена цвета иконок свг при фокусе */
- /* .input-icon:focus svg{
+/* .input-icon:focus svg{
   fill: var(--link-color);
 }  */
 /* блок комментариев */
@@ -1287,8 +1282,8 @@ svg.phone-icon {
   resize: none;
 }
 
- textarea:focus{
-    outline: none;
+textarea:focus {
+  outline: none;
   border-color: var(--link-color);
 }
 /* прячем старый чек */
@@ -1297,42 +1292,46 @@ svg.phone-icon {
   -moz-appearance: none;
   appearance: none;
   position: absolute;
-
 }
 
 .span-icon {
-    display: inline-block;
+  display: inline-block;
 
-/* создаем квадрат для чекбокса */
-border: 2px solid var(--main-color);
-border-radius: 4px ;
+  /* создаем квадрат для чекбокса */
+  border: 2px solid var(--main-color);
+  border-radius: 4px;
 
-    /* размеры квадрата */
+  /* размеры квадрата */
   width: 16px;
   height: 16px;
 
   margin-right: 8px;
-  
 }
 /* заменяем на скачаный синий чек */
-.checkbox:checked + .span-icon{
+.checkbox:checked + .span-icon {
   border-color: var(--link-color);
 
   background-color: var(--link-color);
   background-image: url("../images/iconcheck.svg");
-background-origin: content-box;
-background-repeat: no-repeat;
+  background-origin: content-box;
+  background-repeat: no-repeat;
 }
 
+.span-icon + a {
+  margin-left: 5px;
+
+  color: var(--link-color);
+
+  border-bottom: 1px solid var(--link-color);
+}
 
 .btn-backdrop {
- 
   max-width: 200px;
 
   margin-right: auto;
   margin-left: auto;
   padding: 10px 56px;
-  
+
   border-radius: 4px;
   border-color: transparent;
   align-items: center;
@@ -1351,8 +1350,7 @@ background-repeat: no-repeat;
 }
 
 .btn-backdrop:disabled,
-.btn-backdrop:disabled:hover{
+.btn-backdrop:disabled:hover {
   background-color: #757575;
   border-color: #afb1b8;
 }
-

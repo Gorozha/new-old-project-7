@@ -1,0 +1,7 @@
+.logo-web {
+  color: $link-color;
+}
+
+.hero-button {
+  @extend %CardBorderRadius;
+}
