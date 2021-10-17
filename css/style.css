@@ -11,7 +11,9 @@
 /* вторичный фон боди #F5F4FA */
 /* цвет задвигающегося окна (#2196F3
 90 %) rgba(33, 150, 243, 0,9) */
-:root {
+
+/* ПЕРЕНЕСЕНО */
+/* :root {
   --main-color: #212121;
   --secondary-color: #757575;
   --link-color: #2196f3;
@@ -19,10 +21,12 @@
   --secondary-body-color: #f5f4fa;
   --blackout-color: #2f303a;
   --color-icon: #afb1b8;
-}
+} */
+/* ПЕРЕНЕСЕНО */
 
+/* ПЕРЕНЕСЕНО */
 /* Указываем box sizing */
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -36,30 +40,6 @@
 html {
   font-size: 14px;
 }
-
-/* h2 {
-  color: var(--main-color);
-  font-family: "Roboto", sans-serif;
-  font-style: 36px;
-  line-height: 1.16;
-  letter-spacing: 3%;
-}
-
-h3 {
-  color: var(--main-color);
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 3%;
-}
-
-p {
-  color: var(--secondary-color);
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 3%;
-} */
 
 ul {
   padding: 0;
@@ -84,7 +64,8 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-color);
   background-color: var(--body-color);
-}
+} */
+/* ПЕРЕНЕСЕНО */
 
 /* page ===================== */
 .page {
@@ -152,22 +133,14 @@ body {
   background-color: var(--link-color);
   bottom: -30px;
   border-radius: 2px;
-
-  /* transform: scaleX(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
-
-/* .current:hover::before {
-  transform: scaleX(1);
-} */
 
 /* auth-nav ==========================*/
 .auth-nav a {
   color: var(--secondary-color);
-  font-family: "Roboto", sans-serif;
+
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: inherit;
 }
 svg.auth-icon {
   vertical-align: middle;
@@ -253,7 +226,6 @@ svg.phone-icon {
 /* для дивов в секциях */
 .container {
   width: 1200px;
-  /* background-color: aqua; */
 
   margin-left: auto;
   margin-right: auto;
@@ -296,16 +268,14 @@ svg.phone-icon {
   min-width: 696px;
 
   color: var(--body-color);
-  font-family: "Roboto", sans-serif;
+
   font-size: 44px;
   line-height: 1.36;
-
-  letter-spacing: inherit;
 }
-
-.hero-button {
+/* ПЕРЕНЕСЕНО В _button.scss */
+/* .hero-button {
   min-width: 200px;
-  /* height: 50px;выравниается без этого */
+  
   padding: 10px 32px;
   border-radius: 4px;
 
@@ -313,22 +283,24 @@ svg.phone-icon {
   background-color: var(--link-color);
   border: 1px solid transparent;
   cursor: pointer;
-  font-family: "Roboto", sans-serif;
+
   font-size: 16px;
   line-height: 1.87;
-  /* vertical-align: center; */
+ 
   letter-spacing: inherit;
-}
+} */
 /* =========перспектива=========== */
-.scene {
+/* .scene {
   perspective: 500px;
 }
 
 .scene:hover .hero-button {
   transform: rotateY(360deg);
   transition: transform 500ms linear;
-}
+} */
+/* ПЕРЕНЕСЕНО В _button.scss */
 /* ==================================== */
+
 /* noname============================ */
 .noname {
   padding-top: 94px;
@@ -338,30 +310,12 @@ svg.phone-icon {
   padding-right: 15px;
 }
 
-/* .noname-icon {
-  padding: 25px 100px;
-  margin-bottom: 30px;
-  background-color: var(--secondary-body-color);
-  border-radius: 4px;
- 
-} */
 .noname-menu {
   display: flex;
   /*  */
   /* flex-wrap: wrap; */
   align-items: flex-end;
 }
-
-/* .noname-item {
-  display: block;
-  height: 120px;
-  padding: 25px 100px;
-  margin-bottom: 30px;
-  background-color: var(--secondary-body-color);
-  border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
-} */
 
 .icon-antenna {
   display: block;
@@ -421,7 +375,6 @@ svg.phone-icon {
   color: var(--main-color);
   font-size: 14px;
   line-height: 1.147;
-  letter-spacing: inherit;
 }
 /* .noname-merit{} */
 
@@ -508,7 +461,6 @@ svg.phone-icon {
   color: var(--main-color);
   font-size: 36px;
   line-height: 1.16;
-  letter-spacing: inherit;
 }
 
 /* .team-workers{} */
@@ -544,7 +496,6 @@ svg.phone-icon {
   color: var(--main-color);
   font-size: 16px;
   line-height: 1.18;
-  letter-spacing: inherit;
 }
 
 .team-rubric {
@@ -555,7 +506,6 @@ svg.phone-icon {
   color: var(--secondary-color);
   font-size: 16px;
   line-height: 1.18;
-  letter-spacing: inherit;
 }
 .team-social {
   display: flex;
@@ -644,7 +594,6 @@ svg.phone-icon {
   color: var(--main-color);
   font-size: 36px;
   line-height: 1.16;
-  letter-spacing: inherit;
 }
 .clientage-list > li {
   /* display: inline-block; */
@@ -859,7 +808,8 @@ svg.phone-icon {
 }
 
 /* button============================== */
-.button {
+/* ПЕРЕНЕСЕНО В BUTTON.SCSS */
+/* .button {
   display: inline-block;
   padding: 6px 22px 6px 22px;
   border-radius: 4px;
@@ -867,20 +817,21 @@ svg.phone-icon {
   background-color: var(--link-color);
   cursor: pointer;
   text-align: center;
-}
+} */
+/* ПЕРЕНЕСЕНО В BUTTON.SCSS */
 
 /* footer */
 .footer-subscribe > p {
   padding-top: 72px;
   padding-bottom: 164px;
   margin-left: 0;
-  margin-right: 185px;
+  margin-right: 180px;
   color: var(--body-color);
 
   /* font-family: "Roboto", sans-serif;
   font-size: 14px; */
   line-height: 1.142;
-  /* letter-spacing: inherit; */
+  font-weight: bold;
 }
 .footer-subscribe {
   display: flex;
@@ -889,10 +840,6 @@ svg.phone-icon {
 
   align-items: flex-start;
 }
-
-/* .footer-subscribe p {
-  position: relative;
-} */
 
 .footer-subscribe input {
   position: absolute;
@@ -923,8 +870,8 @@ svg.phone-icon {
   padding-top: 108px;
   /* отступ кнопки футера сверху */
 }
-
-.footer-button {
+/* ПЕРЕНЕСЕНО В BUTTON.SCSS */
+/* .footer-button {
   display: inline-flex;
 
   min-width: 200px;
@@ -939,17 +886,20 @@ svg.phone-icon {
   cursor: pointer;
   font-size: 16px;
   line-height: 1.87;
-}
+} */
 
-.footer-button svg::after {
+/* .footer-button svg::after {
   content: "";
   width: 24px;
   height: 24px;
   margin-left: 10px;
-}
-.footer-button svg {
+} */
+
+/* .footer-button svg {
   margin-left: 10px;
-}
+} */
+/* ПЕРЕНЕСЕНО В BUTTON.SCSS */
+
 /* portfolio ==============================*/
 /* main */
 /* sentence */
@@ -972,39 +922,35 @@ svg.phone-icon {
   margin-right: 0;
   /* кроме последнего с маржином 0 */
 }
-.main-sentence .button {
+
+/* ПЕРЕНЕСЕНО В BUTTON.SCSS */
+/* .main-sentence .button {
   background-color: var(--secondary-body-color);
   color: var(--main-color);
 
   border: 1px solid transparent;
   margin-bottom: 50px;
 
-  /* font-family: "Roboto", sans-serif; */
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: inherit;
   cursor: pointer;
   text-align: center;
-
-  /* perspective-origin: center;
-  perspective: 400px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-}
-.main-sentence .button:hover,
+} */
+/* .main-sentence .button:hover,
 .main-sentence .button:focus {
   background-color: var(--link-color);
   color: var(--secondary-body-color);
   border: 1px solid transparent;
-  /* font-family: "Roboto", sans-serif; */
+
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: inherit;
 
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-
-  /* transform: rotateX(30deg); */
-}
+} */
+/* ПЕРЕНЕСЕНО В BUTTON.SCSS */
 
 .main-menu {
   display: flex;

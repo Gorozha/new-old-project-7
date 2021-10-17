@@ -2,11 +2,9 @@
 // сброс стилей
 // переменные
 // хедер и т.д.
-
 @import "./utilits/variables";
-
+@import "./base/normalize.scss";
 @import "./base/general";
-
 @import "./components/button";
 @import "./components/contacts";
 @import "./components/form";
@@ -14,7 +12,6 @@
 @import "./components/menu";
 @import "./components/modal";
 @import "./components/social";
-
 @import "./layout/container";
 @import "./layout/header";
 @import "./layout/hero";
@@ -23,5 +20,4 @@
 @import "./layout/team";
 @import "./layout/works";
 @import "./layout/footer";
-
-@import "./portfolio.scss";
+@import "./components/portfolio";

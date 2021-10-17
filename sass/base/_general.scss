@@ -14,3 +14,28 @@
 html {
   font-size: 14px;
 }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a,
+ins {
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: $secondary-color;
+  background-color: $body-color;
+}
