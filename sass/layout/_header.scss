@@ -1,7 +1,13 @@
-.logo-web {
-  color: $link-color;
-}
+// .logo-web {
+//   color: $link-color;
+// }
 
-.hero-button {
-  @extend %CardBorderRadius;
+// .hero-button {
+//   @extend %CardBorderRadius;
+// }
+.page-header {
+  border-bottom: 1px solid $secondary-body-color;
+
+  padding-left: 15px;
+  padding-right: 15px;
 }

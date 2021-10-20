@@ -1,7 +1,3 @@
-// находятся только паршалы
-// сброс стилей
-// переменные
-// хедер и т.д.
 @import "./utilits/variables";
 @import "./base/normalize.scss";
 @import "./base/general";
@@ -23,5 +19,6 @@
 @import "./components/site-nav";
 @import "./components/auth-nav";
 @import "./components/hero";
-@import "./portfolio.scss";
+// @import "./portfolio.scss";
 @import "./layout/portfolio";
+@import "./components/backdrop";
