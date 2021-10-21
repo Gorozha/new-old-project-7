@@ -18,42 +18,45 @@
   padding: 25px 100px;
   margin-bottom: 30px;
   background-color: $secondary-body-color;
-  border-radius: 4px;
+  border-radius: $CardBorderRadius;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .icon-clock {
-  display: block;
-  height: 120px;
-  padding: 25px 100px;
-  margin-bottom: 30px;
-  background-color: $secondary-body-color;
-  border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
+  @extend .icon-antenna;
+  // display: block;
+  // height: 120px;
+  // padding: 25px 100px;
+  // margin-bottom: 30px;
+  // background-color: $secondary-body-color;
+  // border-radius: $CardBorderRadius;
+  // background-repeat: no-repeat;
+  // background-position: center;
 }
 
 .icon-diagram {
-  display: block;
-  height: 120px;
-  padding: 25px 100px;
-  margin-bottom: 30px;
-  background-color: $secondary-body-color;
-  border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
+  @extend .icon-antenna;
+  // display: block;
+  // height: 120px;
+  // padding: 25px 100px;
+  // margin-bottom: 30px;
+  // background-color: $secondary-body-color;
+  // border-radius: $CardBorderRadius;
+  // background-repeat: no-repeat;
+  // background-position: center;
 }
 
 .icon-astronaut {
-  display: block;
-  height: 120px;
-  padding: 25px 100px;
-  margin-bottom: 30px;
-  background-color: $secondary-body-color;
-  border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
+  @extend .icon-antenna;
+  // display: block;
+  // height: 120px;
+  // padding: 25px 100px;
+  // margin-bottom: 30px;
+  // background-color: $secondary-body-color;
+  // border-radius: $CardBorderRadius;
+  // background-repeat: no-repeat;
+  // background-position: center;
 }
 
 .noname-item {

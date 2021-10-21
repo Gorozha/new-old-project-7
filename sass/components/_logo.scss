@@ -1,14 +1,15 @@
-.logo-web {
-  color: $link-color;
+%logo-style {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  font-weight: bold;
+}
+.logo-web {
+  color: $link-color;
+  @extend %logo-style;
 }
 .logo-studio {
   color: $main-color;
-  font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @extend %logo-style;
 }

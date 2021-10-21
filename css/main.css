@@ -383,9 +383,46 @@ body {
   background-color: #ffffff;
 }
 
-.hero-button {
+/* raleway-700 - cyrillic */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/raleway-v22-cyrillic-700.woff2") format("woff2"), url("../fonts/raleway-v22-cyrillic-700.woff") format("woff");
+}
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v29-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v29-latin_cyrillic-regular.woff") format("woff");
+  /* Modern Browsers */
+}
+/* roboto-500 - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v29-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v29-latin_cyrillic-500.woff") format("woff");
+  /* Modern Browsers */
+}
+/* roboto-700 - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v29-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-v29-latin_cyrillic-700.woff") format("woff");
+  /* Modern Browsers */
+}
+/* roboto-900 - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/roboto-v29-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/roboto-v29-latin_cyrillic-900.woff") format("woff");
+}
+.hero-button, .footer-button {
   min-width: 200px;
-  /* height: 50px;выравниается без этого */
   padding: 10px 32px;
   border-radius: 4px;
   color: #ffffff;
@@ -394,6 +431,7 @@ body {
   cursor: pointer;
   font-size: 16px;
   line-height: 1.87;
+  font-weight: bold;
   letter-spacing: inherit;
 }
 
@@ -402,7 +440,7 @@ body {
   -webkit-perspective: 500px;
           perspective: 500px;
 }
-.scene:hover .hero-button, .scene:hover .hero-button {
+.scene:hover .hero-button, .scene:hover .footer-button, .scene:hover .hero-button {
   -webkit-transform: rotateY(360deg);
           transform: rotateY(360deg);
   -webkit-transition: -webkit-transform 500ms linear;
@@ -428,13 +466,11 @@ body {
   min-width: 200px;
   padding: 10px 42px 10px 23px;
   margin-top: 108px;
-  border-radius: 4px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
-  color: #ffffff;
-  background-color: #2196f3;
+  font-weight: bold;
   cursor: pointer;
   font-size: 16px;
   line-height: 1.87;
@@ -458,6 +494,7 @@ body {
   color: #212121;
   border: 1px solid transparent;
   margin-bottom: 50px;
+  font-weight: bold;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: inherit;
@@ -514,23 +551,23 @@ body {
   border-radius: 4px;
 }
 
-.logo-web {
-  color: #2196f3;
+.logo-studio, .logo-web {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  font-weight: bold;
+}
+
+.logo-web {
+  color: #2196f3;
 }
 
 .logo-studio {
   color: #212121;
-  font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 
-.team-social {
+.team-social, .link-a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -544,15 +581,6 @@ body {
 }
 
 .link-a {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 44px;
   height: 44px;
   background: #ffffff;
@@ -819,40 +847,7 @@ body {
           align-items: flex-end;
 }
 
-.icon-antenna {
-  display: block;
-  height: 120px;
-  padding: 25px 100px;
-  margin-bottom: 30px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-clock {
-  display: block;
-  height: 120px;
-  padding: 25px 100px;
-  margin-bottom: 30px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-diagram {
-  display: block;
-  height: 120px;
-  padding: 25px 100px;
-  margin-bottom: 30px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-astronaut {
+.icon-antenna, .icon-astronaut, .icon-diagram, .icon-clock {
   display: block;
   height: 120px;
   padding: 25px 100px;
@@ -966,12 +961,12 @@ body {
 }
 
 .works-rubric {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.142;
   font-weight: bold;
   text-align: center;
   color: #ffffff;
-  padding: 27px 90px;
+  padding: 27px 83px;
 }
 
 .overlay-works {
@@ -1034,6 +1029,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: inherit;
+  font-weight: bold;
 }
 .site-nav a a:hover, .site-nav a a:focus {
   color: #2196f3;
@@ -1528,9 +1524,46 @@ body {
   background-color: #ffffff;
 }
 
-.hero-button {
+/* raleway-700 - cyrillic */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/raleway-v22-cyrillic-700.woff2") format("woff2"), url("../fonts/raleway-v22-cyrillic-700.woff") format("woff");
+}
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v29-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v29-latin_cyrillic-regular.woff") format("woff");
+  /* Modern Browsers */
+}
+/* roboto-500 - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v29-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v29-latin_cyrillic-500.woff") format("woff");
+  /* Modern Browsers */
+}
+/* roboto-700 - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v29-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-v29-latin_cyrillic-700.woff") format("woff");
+  /* Modern Browsers */
+}
+/* roboto-900 - latin_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/roboto-v29-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/roboto-v29-latin_cyrillic-900.woff") format("woff");
+}
+.hero-button, .footer-button {
   min-width: 200px;
-  /* height: 50px;выравниается без этого */
   padding: 10px 32px;
   border-radius: 4px;
   color: #ffffff;
@@ -1539,6 +1572,7 @@ body {
   cursor: pointer;
   font-size: 16px;
   line-height: 1.87;
+  font-weight: bold;
   letter-spacing: inherit;
 }
 
@@ -1547,7 +1581,7 @@ body {
   -webkit-perspective: 500px;
           perspective: 500px;
 }
-.scene:hover .hero-button, .scene:hover .hero-button {
+.scene:hover .hero-button, .scene:hover .footer-button, .scene:hover .hero-button {
   -webkit-transform: rotateY(360deg);
           transform: rotateY(360deg);
   -webkit-transition: -webkit-transform 500ms linear;
@@ -1573,13 +1607,11 @@ body {
   min-width: 200px;
   padding: 10px 42px 10px 23px;
   margin-top: 108px;
-  border-radius: 4px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
-  color: #ffffff;
-  background-color: #2196f3;
+  font-weight: bold;
   cursor: pointer;
   font-size: 16px;
   line-height: 1.87;
@@ -1603,6 +1635,7 @@ body {
   color: #212121;
   border: 1px solid transparent;
   margin-bottom: 50px;
+  font-weight: bold;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: inherit;
@@ -1659,23 +1692,23 @@ body {
   border-radius: 4px;
 }
 
-.logo-web {
-  color: #2196f3;
+.logo-web, .logo-studio {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  font-weight: bold;
+}
+
+.logo-web {
+  color: #2196f3;
 }
 
 .logo-studio {
   color: #212121;
-  font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 
-.team-social {
+.team-social, .link-a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1689,15 +1722,6 @@ body {
 }
 
 .link-a {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 44px;
   height: 44px;
   background: #ffffff;
@@ -1964,40 +1988,7 @@ body {
           align-items: flex-end;
 }
 
-.icon-antenna {
-  display: block;
-  height: 120px;
-  padding: 25px 100px;
-  margin-bottom: 30px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-clock {
-  display: block;
-  height: 120px;
-  padding: 25px 100px;
-  margin-bottom: 30px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-diagram {
-  display: block;
-  height: 120px;
-  padding: 25px 100px;
-  margin-bottom: 30px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-astronaut {
+.icon-antenna, .icon-clock, .icon-diagram, .icon-astronaut {
   display: block;
   height: 120px;
   padding: 25px 100px;
@@ -2111,12 +2102,12 @@ body {
 }
 
 .works-rubric {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.142;
   font-weight: bold;
   text-align: center;
   color: #ffffff;
-  padding: 27px 90px;
+  padding: 27px 83px;
 }
 
 .overlay-works {
@@ -2179,6 +2170,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: inherit;
+  font-weight: bold;
 }
 .site-nav a a:hover, .site-nav a a:focus {
   color: #2196f3;
